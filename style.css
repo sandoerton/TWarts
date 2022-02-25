@@ -44,3 +44,7 @@ main {
   height: 500px;
   align-items: flex-end;
 }
+
+footer {
+  border: 2px violet solid;
+}
