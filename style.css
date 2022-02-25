@@ -9,3 +9,14 @@
     background-color: rgb(50, 167, 145);
 }
 
+.trybewarts-login {
+    display: flex;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+}
+
+#container {
+    /* display: flex; */
+    justify-content: flex-end;
+    border: 2px red solid;
+}
