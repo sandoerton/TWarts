@@ -34,9 +34,8 @@ main {
     border: 2px blue solid;
 }
 
-.itemLeft {
+.itens {
     display: flex;
-    flex-direction: column;
 }
 
 #evaluation-form {
