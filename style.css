@@ -24,6 +24,15 @@
 
 main {
     display: flex;
+    
+}
+
+#left {
+    border: 2px yellow solid;
+}
+
+#right {
+    border: 2px blue solid;
 }
 
 #evaluation-form {
@@ -32,3 +41,7 @@ main {
     flex-direction: column;
 }
 
+#trybewarts-forms-logo {
+    height: 500px;
+    align-items: flex-end;
+}
