@@ -12,60 +12,29 @@ function validaLogin() {
 
 botaoLogin.addEventListener('click', validaLogin);
 
+const botaoEnviar = document.querySelector('#submit-btn');
+const botaoCheckBox = document.querySelector('#agreement');
 
-let botaoEnviar = document.querySelector('#submit-btn');
-let botaoCheckBox = document.querySelector('#agreement');
+window.onload = () => {
+  botaoEnviar.disabled = true;
+};
 
-window.onload = function () {
-botaoEnviar.disabled = true;
-}
-
-function habilitaBotao () {
-
-  if (botaoCheckBox.checked === true){
+function habilitaBotao() {
+  if (botaoCheckBox.checked === true) {
     botaoEnviar.disabled = false;
   } else {
     botaoEnviar.disabled = true;
   }
-
 }
 
 botaoCheckBox.addEventListener('click', habilitaBotao);
 
-let textArea = document.getElementById('textarea');
+const textArea = document.getElementById('textarea');
 
-function contadorTextArea (){
-
-  let contador = textArea.maxLength - textArea.textLength;
-  let counter = document.getElementById('counter');
-
+function contadorTextArea() {
+  const contador = textArea.maxLength - textArea.textLength;
+  const counter = document.getElementById('counter');
   counter.innerHTML = contador;
-  
 }
 
 textArea.addEventListener('keyup', contadorTextArea);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
