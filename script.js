@@ -11,3 +11,27 @@ function validaLogin() {
 }
 
 botaoLogin.addEventListener('click', validaLogin);
+
+
+let botaoEnviar = document.querySelector('#submit-btn');
+let botaoCheckBox = document.querySelector('#agreement');
+
+window.onload = function () {
+botaoEnviar.disabled = true;
+}
+
+function habilitaBotao () {
+
+  if (botaoCheckBox.checked === true){
+    botaoEnviar.disabled = false;
+  } else {
+    botaoEnviar.disabled = true;
+  }
+
+}
+
+botaoCheckBox.addEventListener('click', habilitaBotao);
+
+
+
+
