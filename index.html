@@ -25,22 +25,25 @@
     </header>
     <main>
         <div id="left">
+            
             <form id="evaluation-form" action="" method="get">
+                <h1 id="title-forms"> Formulário de Avaliação </h1>
                 <div class="itens">
-                    <input type="text" name="" id="input-name" placeholder="Nome">
-                <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
+                    <input required type="text" name="" id="input-name" placeholder="Nome">
+                <input required type="text" name="" id="input-lastname" placeholder="Sobrenome">
                 </div>
                 <div class="itens">
-                    <input type="email" name="" id="input-email" placeholder="Email">
-                <label for="house">Casa:</label>
-                <select name="" id="house">
+                    <input required type="email" name="" id="input-email" placeholder="Email">
+                <label for="house" id="casa">Casa:</label>
+                <select required name="" id="house">
+                    <option disabled selected>Selecione...</option>
                     <option id="gitnoria-house"  value="Gitnória">Gitnória</option>
                     <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
                     <option id="corvinode-house" value="Corvinode">Corvinode</option>
                     <option id="pytherina-house" value="Pytherina">Pytherina</option>
                 </select>
                 </div>
-                <div class="itens">
+                <div class="itens div-principal">
                     <div id="itemLeft">
 
                         <label id="label-family" for="">Qual sua família?</label>
@@ -81,8 +84,8 @@
                 </div>
         
                     
-                    <div class="itens">
-                        <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+                    <div class="itens radio-botton">
+                        <label required id="label-rate" for="">Como você avalia a Trybewarts?</label>
                         <input type="radio" name="rate" id="1" value="1">
                         <label for="1">1</label>
                         <input type="radio" name="rate" id="2" value="2">
@@ -104,11 +107,12 @@
                         <input type="radio" name="rate" id="10" value="10">
                         <label for="10">10</label>
                     </div>
-                    <div class="itens">
-                        <label class="textarea" for="">Deixe seu comentário:</label>
-                        <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+                    <div>
+                        <label class="textarea"for="">Deixe seu comentário:</label> <br>
+                        <textarea required name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+                        <label id="counter">500</label>
                     </div>
-                    <div class="itens">
+                    <div>
                         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
                         <input type="checkbox" name="" id="agreement">
                     </div>

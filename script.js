@@ -32,6 +32,40 @@ function habilitaBotao () {
 
 botaoCheckBox.addEventListener('click', habilitaBotao);
 
+let textArea = document.getElementById('textarea');
+
+function contadorTextArea (){
+
+  let contador = textArea.maxLength - textArea.textLength;
+  let counter = document.getElementById('counter');
+
+  counter.innerHTML = contador;
+  
+}
+
+textArea.addEventListener('keyup', contadorTextArea);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
