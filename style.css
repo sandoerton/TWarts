@@ -7,6 +7,32 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   align-items: center;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  background-size: cover;
+  height: 80px;
+  margin: 10px 25px;
+}
+
+#trybewarts-header-title{
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+}
+
+#email, #password, #btn-login {
+  padding: 3px;
+  border:black 1px solid;
+  border-radius: 7px;
+ 
+}
+
+#btn-login{
+  background-color: blue;
+  color: white;
+  width: 100px;
+  margin-right: 25px;
 }
 
 .trybewarts-login {
@@ -15,7 +41,6 @@
 
 #container {
   justify-content: flex-end;
-  border: 2px red solid;
 }
 
 main {
